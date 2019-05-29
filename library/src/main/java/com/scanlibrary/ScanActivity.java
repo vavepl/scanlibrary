@@ -24,6 +24,7 @@ public class ScanActivity extends Activity implements IScanner, ComponentCallbac
         PickImageFragment fragment = new PickImageFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ScanConstants.OPEN_INTENT_PREFERENCE, getPreferenceContent());
+        bundle.putInt(ScanConstants.OPEN_SCAN, getScanContent());
         fragment.setArguments(bundle);
         android.app.FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -33,6 +34,10 @@ public class ScanActivity extends Activity implements IScanner, ComponentCallbac
 
     protected int getPreferenceContent() {
         return getIntent().getIntExtra(ScanConstants.OPEN_INTENT_PREFERENCE, 0);
+    }
+
+    protected int getScanContent() {
+        return getIntent().getIntExtra(ScanConstants.OPEN_SCAN, 1);
     }
 
     @Override

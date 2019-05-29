@@ -61,7 +61,7 @@ public class ScanFragment extends Fragment {
     }
 
     private void init() {
-        if(ScanConstants.OPEN_SCAN == 1){
+        if(getIntentScan() == 1){
             sourceImageView = (ImageView) view.findViewById(R.id.sourceImageView);
             scanButton = (Button) view.findViewById(R.id.scanButton);
             scanButton.setOnClickListener(new ScanButtonClickListener());
@@ -86,6 +86,10 @@ public class ScanFragment extends Fragment {
             }
         }
 
+    }
+
+    private int getIntentScan() {
+        return getArguments().getInt(ScanConstants.OPEN_SCAN, 1);
     }
 
     private Bitmap getBitmap() {
