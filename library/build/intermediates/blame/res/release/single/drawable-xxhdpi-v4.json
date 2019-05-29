@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_black_and_white.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_black_and_white.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_enhamce_image.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_enhamce_image.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_gray.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_gray.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_rotac.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_rotac.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_image.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_image.png"
+    },
+    {
+        "merged": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_rotc.png",
+        "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/drawable-xxhdpi/ic_rotc.png"
+    }
+]

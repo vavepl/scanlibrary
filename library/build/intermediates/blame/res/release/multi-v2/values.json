@@ -1,0 +1,154 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/res/merged/release/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "3,5,4,8,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "56,140,97,266,201",
+                        "endColumns": "40,59,42,63,64",
+                        "endOffsets": "92,195,135,325,261"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,96,156,199,263",
+                        "endColumns": "40,59,42,63,64",
+                        "endOffsets": "91,151,194,258,323"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/dialog.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "296"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "1304",
+                        "endLines": "29",
+                        "endColumns": "12",
+                        "endOffsets": "1545"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4,11,7,8,6",
+                        "startColumns": "0,0,0,0,0,0",
+                        "startOffsets": "119,173,425,265,315,226",
+                        "endColumns": "53,51,45,49,48,38",
+                        "endOffsets": "172,224,470,314,363,264"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "328,386,442,492,546,599",
+                        "endColumns": "57,55,49,53,52,42",
+                        "endOffsets": "381,437,487,541,594,637"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,11,8,6,3,10,12,13,9,7,5",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "119,17,448,294,218,66,404,508,558,370,256,172",
+                        "endColumns": "52,48,59,75,37,52,43,49,120,33,37,45",
+                        "endOffsets": "167,61,503,365,251,114,443,553,674,399,289,213"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "642,695,744,804,880,918,971,1015,1065,1186,1220,1258",
+                        "endColumns": "52,48,59,75,37,52,43,49,120,33,37,45",
+                        "endOffsets": "690,739,799,875,913,966,1010,1060,1181,1215,1253,1299"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "3,5,4,8,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "56,140,97,266,201",
+                        "endColumns": "40,59,42,63,64",
+                        "endOffsets": "92,195,135,325,261"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,96,156,199,263",
+                        "endColumns": "40,59,42,63,64",
+                        "endOffsets": "91,151,194,258,323"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/dialog.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "296"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "1304",
+                        "endLines": "29",
+                        "endColumns": "12",
+                        "endOffsets": "1545"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4,11,7,8,6",
+                        "startColumns": "0,0,0,0,0,0",
+                        "startOffsets": "119,173,425,265,315,226",
+                        "endColumns": "53,51,45,49,48,38",
+                        "endOffsets": "172,224,470,314,363,264"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "328,386,442,492,546,599",
+                        "endColumns": "57,55,49,53,52,42",
+                        "endOffsets": "381,437,487,541,594,637"
+                    }
+                },
+                {
+                    "source": "/Users/tomekat/Documents/projects/p2d_app/scanlibrary/library/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,11,8,6,3,10,12,13,9,7,5",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "119,17,448,294,218,66,404,508,558,370,256,172",
+                        "endColumns": "52,48,59,75,37,52,43,49,120,33,37,45",
+                        "endOffsets": "167,61,503,365,251,114,443,553,674,399,289,213"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "642,695,744,804,880,918,971,1015,1065,1186,1220,1258",
+                        "endColumns": "52,48,59,75,37,52,43,49,120,33,37,45",
+                        "endOffsets": "690,739,799,875,913,966,1010,1060,1181,1215,1253,1299"
+                    }
+                }
+            ]
+        }
+    ]
+}

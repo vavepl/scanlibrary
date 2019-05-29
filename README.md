@@ -1,4 +1,4 @@
 # scanlibrary
 android document scanner library
 
-[![](https://jitpack.io/v/NeutrinosPlatform/scanlibrary.svg)](https://jitpack.io/#NeutrinosPlatform/scanlibrary)
+[![](https://jitpack.io/v/vavepl/scanlibrary.svg)](https://jitpack.io/#vavepl/scanlibrary)
