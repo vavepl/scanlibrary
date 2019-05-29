@@ -61,31 +61,21 @@ public class ScanFragment extends Fragment {
     }
 
     private void init() {
-        if(getIntentScan() == 1){
-            sourceImageView = (ImageView) view.findViewById(R.id.sourceImageView);
-            scanButton = (Button) view.findViewById(R.id.scanButton);
-            scanButton.setOnClickListener(new ScanButtonClickListener());
-            sourceFrame = (FrameLayout) view.findViewById(R.id.sourceFrame);
-            polygonView = (PolygonView) view.findViewById(R.id.polygonView);
-            sourceFrame.post(new Runnable() {
-                @Override
-                public void run() {
-                original = getBitmap();
-                if (original != null) {
-                    setBitmap(original);
-                }
-                }
-            });
-        } else {
+        Log.d("iniScanFragment", "iniScanFragment: " + getIntentScan());
+        sourceImageView = (ImageView) view.findViewById(R.id.sourceImageView);
+        scanButton = (Button) view.findViewById(R.id.scanButton);
+        scanButton.setOnClickListener(new ScanButtonClickListener());
+        sourceFrame = (FrameLayout) view.findViewById(R.id.sourceFrame);
+        polygonView = (PolygonView) view.findViewById(R.id.polygonView);
+        sourceFrame.post(new Runnable() {
+            @Override
+            public void run() {
             original = getBitmap();
-            Map<Integer, PointF> points = polygonView.getPoints();
-            if (isScanPointsValid(points)) {
-                new ScanAsyncTask(points).execute();
-            } else {
-                showErrorDialog();
+            if (original != null) {
+                setBitmap(original);
             }
-        }
-
+            }
+        });
     }
 
     private int getIntentScan() {
