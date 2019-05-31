@@ -306,7 +306,7 @@ public class PickImageFragment extends Fragment implements  OnDialogButtonClickL
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("", "onActivityResult" + resultCode);
+        Log.d("onActivityResult", "onActivityResult" + resultCode);
         Bitmap bitmap = null;
         if (resultCode == Activity.RESULT_OK) {
             try {
