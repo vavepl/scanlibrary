@@ -118,17 +118,34 @@ public class ResultFragment extends Fragment {
 
     private class OriginalButtonClickListener implements View.OnClickListener {
         @Override
-        public void onClick(View v) {
-            try {
-                showProgressDialog(getResources().getString(R.string.applying_filter));
-                transformed = rotoriginal;
-
-                scannedImageView.setImageBitmap(rotoriginal);
-                dismissDialog();
-            } catch (OutOfMemoryError e) {
-                e.printStackTrace();
-                dismissDialog();
-            }
+        public void onClick(final View v) {
+            showProgressDialog(getResources().getString(R.string.applying_filter));
+            AsyncTask.execute(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        transformed = original;
+                    } catch (final OutOfMemoryError e) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                transformed = original;
+                                scannedImageView.setImageBitmap(original);
+                                e.printStackTrace();
+                                dismissDialog();
+                                onClick(v);
+                            }
+                        });
+                    }
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            scannedImageView.setImageBitmap(transformed);
+                            dismissDialog();
+                        }
+                    });
+                }
+            });
         }
     }
 
