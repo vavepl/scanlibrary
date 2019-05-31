@@ -301,6 +301,7 @@ public class PickImageFragment extends Fragment implements  OnDialogButtonClickL
         File file = new File(ScanConstants.IMAGE_PATH, "IMG_" + timeStamp +
                 ".jpg");
         fileUri = Uri.fromFile(file);
+        Log.d("createImageFile", "File");
         return file;
     }
 
@@ -329,41 +330,41 @@ public class PickImageFragment extends Fragment implements  OnDialogButtonClickL
             
             if ( camorgal == 0 )
             {
-            //PickImageFragment.this.getActivity().getContentResolver().notifyChange(fileUri, null);
-            File imageFile = new File(fileUri.getPath());
-            ExifInterface exif = null;
-            
-            try
-            {
-                exif = new ExifInterface(imageFile.getAbsolutePath());
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-            
-            int orientation = 0;
-            if (exif != null)
-            {
-                orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
-            }
-            
-            int rotate = 0;
-            switch (orientation) {
-                case ExifInterface.ORIENTATION_ROTATE_270:
-                    rotate = 270;
-                    break;
-                case ExifInterface.ORIENTATION_ROTATE_180:
-                    rotate = 180;
-                    break;
-                case ExifInterface.ORIENTATION_ROTATE_90:
-                    rotate = 90;
-                    break;
-            }
+                //PickImageFragment.this.getActivity().getContentResolver().notifyChange(fileUri, null);
+                File imageFile = new File(fileUri.getPath());
+                ExifInterface exif = null;
 
-            android.graphics.Matrix matrix = new android.graphics.Matrix();
-            matrix.postRotate(rotate);
-            bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+                try
+                {
+                    exif = new ExifInterface(imageFile.getAbsolutePath());
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+
+                int orientation = 0;
+                if (exif != null)
+                {
+                    orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
+                }
+
+                int rotate = 0;
+                switch (orientation) {
+                    case ExifInterface.ORIENTATION_ROTATE_270:
+                        rotate = 270;
+                        break;
+                    case ExifInterface.ORIENTATION_ROTATE_180:
+                        rotate = 180;
+                        break;
+                    case ExifInterface.ORIENTATION_ROTATE_90:
+                        rotate = 90;
+                        break;
+                }
+
+                android.graphics.Matrix matrix = new android.graphics.Matrix();
+                matrix.postRotate(rotate);
+                bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
             }
             postImagePick(bitmap);
         }
